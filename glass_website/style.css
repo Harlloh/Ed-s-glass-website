@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 600;
+  color: #426696;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+h2,
+p {
+  font-weight: 500;
+  color: #658ec6;
+  opacity: 0.8;
+}
+
+h3 {
+  font-weight: 600;
+  color: #426696;
+  opacity: 0.8;
+}
+
+main {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left bottom, right top, from(#65dfc6), to(#6cdbeb));
+  background: linear-gradient(to right top, #65dfc6, #6cdbeb);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .glass {
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
+  -webkit-backdrop-filter: blur(2.5rem);
+          backdrop-filter: blur(2.5rem);
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+}
+
+main .glass .dashboard {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+}
+
+main .glass .games {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 5rem;
+}
+
+main .glass .games .status {
+  margin-bottom: 3rem;
+}
+
+main .glass .games .status input {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border: none;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+main .glass .games .cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, right bottom, left top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(to left top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5));
+  border-radius: 1rem;
+  margin: 2rem 0;
+  padding: 2rem;
+  -webkit-box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+          box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .glass .games .cards .card .precentage {
+  font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, right top, from(#65dfc6), to(#6cdbeb));
+  background: linear-gradient(to right top, #65dfc6, #6cdbeb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main .glass .games .cards .card .card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .glass .games .cards .card .card-info .progre {
+  background: -webkit-gradient(linear, left bottom, right top, from(#65dfc6), to(#6cdbeb));
+  background: linear-gradient(to right top, #65dfc6, #6cdbeb);
+  width: 100%;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+main .glass .games .cards .card .card-info .progre::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #ececec;
+  position: absolute;
+  left: 60%;
+}
+
+.circle1,
+.circle2 {
+  background: white;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.2)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+}
+
+.circle1 {
+  top: 5%;
+  right: 15%;
+  border-radius: 50%;
+}
+
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+  border-radius: 50%;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem 0rem;
+  padding: 1rem 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link h2 {
+  padding: 0rem 2rem;
+}
+
+.pro {
+  background: -webkit-gradient(linear, left bottom, right top, from(#65dfc6), to(#6cdbeb));
+  background: linear-gradient(to right top, #65dfc6, #6cdbeb);
+  border-radius: 2rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  position: relative;
+}
+
+.pro h2 {
+  width: 40%;
+  color: white;
+  font-weight: 600;
+}
+
+.pro img {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.games {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+/*# sourceMappingURL=style.css.map */
